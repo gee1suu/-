@@ -12,11 +12,11 @@ public class Main {
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		StringTokenizer st = new StringTokenizer(br.readLine());
 
-		int A = Integer.parseInt(st.nextToken());
-		int B = Integer.parseInt(st.nextToken());
+		StringBuffer sbA = new StringBuffer(st.nextToken());
+		StringBuffer sbB = new StringBuffer(st.nextToken());
 
-		A = 100 * (A % 10) + 10 * (A % 100 / 10) + A / 100;
-		B = 100 * (B % 10) + 10 * (B % 100 / 10) + B / 100;
+		int A = Integer.parseInt(sbA.reverse().toString());
+		int B = Integer.parseInt(sbB.reverse().toString());
 
 		if (A > B)
 			bw.write(String.valueOf(A));
