@@ -25,4 +25,5 @@ public class Main {
 		else
 			return n * factorial(n - 1);
 	}
+	
 }
